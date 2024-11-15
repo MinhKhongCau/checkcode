@@ -19,6 +19,7 @@ function showInfo (data) {
     console.log(products)
     var title = product.title
     var slider = product.Slider_img
+    var description = product.description
     var img = product.list_image
     var list_img = ""
     list_img += `
@@ -28,6 +29,7 @@ function showInfo (data) {
                     <img src="./assets/Info/${slider}" alt="" class="img-fluid">
                 </a>
             </div>
+            <h4 class="p-4 m-4">${description}</h4>
         </div>`
     img.forEach(element => {
         list_img += `
